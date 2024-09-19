@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px;
+    width: 70%;
+    height: 70vh;
+}
+
+div{
+    border-radius: 20px;
+}
+    
+    
+
+
+#korea{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/52c0b141e4b0b87925bacd01/1427991080650-SA9IS11GJCV14E9QGHSB/fazer+seul+atra%C3%A7%C3%B5es+imperdiveis?format=500w);
+}
+
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+
+#korea .background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 100 ,220, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    color: white;
+}
+
+#Tbilisi{
+    background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/9a/e7.jpg);
+
+}
+
+
+#Tbilisi .background{
+    background-color: rgba(50, 100 ,220, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#NewYork{
+    background-image: url(https://media.istockphoto.com/id/495858191/id/foto/broadway.jpg?s=612x612&w=0&k=20&c=Cutfr1NS-Zbct3LGMUIzHLWZCRzocVQ4NXDvqIUPedY=);
+}
+
+
+#NewYork .background{
+    background-color: rgba(50, 100 ,220, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Paris{
+    background-image: url(https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg);
+}
+
+
+#Paris .background{
+    background-color: rgba(50, 100 ,220, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#Tokyo{
+    background-image: url(https://i.pinimg.com/236x/c3/a8/b6/c3a8b66e3b0087c5f96118aa427630a8.jpg);
+}
+
+
+#Tokyo .background{
+    background-color: rgba(50, 100 ,220, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#Dubai{
+    background-image: url(https://www.visitdubai.com/-/media/GatherContent/article/s/spend-24-hours-in-downtown-dubai/burj-khalifa-dtcm-2022.jpg?cx=0.5&cy=0.48&cw=325&ch=330);
+}
+
+
+
+#Dubai .background{
+    background-color: rgba(50, 100 ,220, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

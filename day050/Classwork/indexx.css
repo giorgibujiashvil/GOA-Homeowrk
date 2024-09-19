@@ -1,0 +1,22 @@
+#btc{
+    background-color: red;
+    color: rgb(3, 243, 252);
+
+    width: 200px;
+
+    transition-property: background-color, ;
+    transition-duration: 1s, 0.10s;
+    transition-timing-function: ease-in-out;
+
+    transform: translate(750px);
+    
+
+
+}
+
+
+#btc:hover{
+    background-color: green;
+    color: rgba(0, 0, 255, 0);
+    transform: scale(1.1);
+}

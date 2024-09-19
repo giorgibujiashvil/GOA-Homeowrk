@@ -1,0 +1,45 @@
+<!-- 2)შექმენით დივ ბლოკი, რომლის ზომა იქნება 400x400px. ცალკე შექმენით 5 ღილაკი - პირველს დაუწერეთ red, მეორეს blue, მესამეს pink, მეოთხეს black, მეხუთეს კი green. ღილაკების ტექსტის შესაბამისად, მათ დაკლიკებაზე უნდა იცვლებოდეს დივ ბლოკის backgroung ფერი. მაგალითად, თუ დააკლიკებთ ღილაკზე, რომელსაც უწერია green, დივ ბლოკის ფერი უნდა გახდეს მწვანე -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <div id="boxcolor"></div>
+    <style>
+        #boxcolor {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        .colorButton {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #fdcf02;
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .pink { background-color: pink; }
+        .black { background-color: black; }
+        .green { background-color: green; }
+    </style>
+</head>
+<body>
+    <button class="colorButton red" onclick="changeColor('red')">Red</button>
+    <button class="colorButton blue" onclick="changeColor('blue')">Blue</button>
+    <button class="colorButton pink" onclick="changeColor('pink')">Pink</button>
+    <button class="colorButton black" onclick="changeColor('black')">Black</button>
+    <button class="colorButton green" onclick="changeColor('green')">Green</button>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById('boxcolor').style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

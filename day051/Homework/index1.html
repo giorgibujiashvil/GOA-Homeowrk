@@ -1,0 +1,24 @@
+<!-- 1)შექმენით პარაგრაფი, რომლის საწყისი ტექსტი იქნება 0. მის ქვემოთ შექმენით ერთი ღილაკი, რომლის ყოველ დაკლიკებაზე counter ცვლადს ერთი მოემატება და ეს რიცხვი გახდება პარაგრაფის textcontent -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="increment()">add</button>
+    <p id="counter"></p>
+
+    <script>
+        let paragraph = document.getElementById("counter")
+        let clicks = 0
+        function increment(){
+            clicks = clicks + 1
+            paragraph.textContent = clicks
+        }
+    </script>
+</body>
+</html>
