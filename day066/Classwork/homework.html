@@ -1,0 +1,49 @@
+<!--შექმენით დივ ბლოკი რომელშიც გექნებათ 3 პარაგრაფი, removeChild მეთოდის დახმარებით წაშალეთ პირველი ელემენტი, ხოლო შემდეგ remove მეთოდის დახმარებით წაშალეთ მესამე პარაგრაფი -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Paragraphs</title>
+    <style>
+        #content {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <p id="paragraph1">ეს არის პირველი პარაგრაფი.</p>
+    <p id="paragraph2">ეს არის მეორე პარაგრაფი.</p>
+    <p id="paragraph3">ეს არის მესამე პარაგრაფი.</p>
+</div>
+
+<button onclick="removeElements()">წაშალეთ პარაგრაფები</button>
+
+<script>
+    function removeElements() {
+        // პირველი პარაგრაფის წაშლა removeChild მეთოდის გამოყენებით
+        const contentDiv = document.getElementById('content');
+        const firstParagraph = document.getElementById('paragraph1');
+        contentDiv.removeChild(firstParagraph);
+
+        // მესამე პარაგრაფის წაშლა remove მეთოდის გამოყენებით
+        const thirdParagraph = document.getElementById('paragraph3');
+        thirdParagraph.remove();
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
